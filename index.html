@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <mate charest="utf-8" />
+    <title>Hello world!</title>
+  </head>
+  <style>
+    body {
+      background-color: rgb(240, 185, 104);
+      text-align: center;
+    }
+    ul {
+      list-style-type: none;
+    }
+  </style>
+  <body>
+    <h1>Epmloyee's data</h1>
+    <ul>
+      {{#each users}}
+      <li>Name: {{this.name}}</li>
+      <li>Age: {{this.age}}</li>
+      <li>Contact Number: {{this.number}}</li>
+      <br />
+      {{/each}}
+    </ul>
+  </body>
+</html>
